@@ -14,6 +14,7 @@
 		2883884A2B2C3D6000B0257B /* TransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388492B2C3D6000B0257B /* TransitTests.swift */; };
 		288388542B2C3D6000B0257B /* TransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388532B2C3D6000B0257B /* TransitUITests.swift */; };
 		288388562B2C3D6000B0257B /* TransitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388552B2C3D6000B0257B /* TransitUITestsLaunchTests.swift */; };
+		288388662B2CAB6900B0257B /* AsyncCSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388652B2CAB6900B0257B /* AsyncCSVReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2883884F2B2C3D6000B0257B /* TransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		288388532B2C3D6000B0257B /* TransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitUITests.swift; sourceTree = "<group>"; };
 		288388552B2C3D6000B0257B /* TransitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		288388652B2CAB6900B0257B /* AsyncCSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCSVReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				2883883A2B2C3D5F00B0257B /* ContentView.swift */,
 				2883883C2B2C3D6000B0257B /* Assets.xcassets */,
 				2883883E2B2C3D6000B0257B /* Preview Content */,
+				288388672B2CAF5900B0257B /* CSV */,
 			);
 			path = Transit;
 			sourceTree = "<group>";
@@ -125,6 +128,14 @@
 				288388552B2C3D6000B0257B /* TransitUITestsLaunchTests.swift */,
 			);
 			path = TransitUITests;
+			sourceTree = "<group>";
+		};
+		288388672B2CAF5900B0257B /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				288388652B2CAB6900B0257B /* AsyncCSVReader.swift */,
+			);
+			path = CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */,
 				288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */,
+				288388662B2CAB6900B0257B /* AsyncCSVReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
