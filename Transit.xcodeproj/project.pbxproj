@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281C28292B2D08140018D1BA /* CSVFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C28282B2D08140018D1BA /* CSVFragment.swift */; };
 		288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388382B2C3D5F00B0257B /* TransitApp.swift */; };
 		2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2883883A2B2C3D5F00B0257B /* ContentView.swift */; };
 		2883883D2B2C3D6000B0257B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2883883C2B2C3D6000B0257B /* Assets.xcassets */; };
@@ -14,7 +15,9 @@
 		2883884A2B2C3D6000B0257B /* TransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388492B2C3D6000B0257B /* TransitTests.swift */; };
 		288388542B2C3D6000B0257B /* TransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388532B2C3D6000B0257B /* TransitUITests.swift */; };
 		288388562B2C3D6000B0257B /* TransitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388552B2C3D6000B0257B /* TransitUITestsLaunchTests.swift */; };
+		288388642B2C3E6400B0257B /* Agency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388632B2C3E6400B0257B /* Agency.swift */; };
 		288388662B2CAB6900B0257B /* AsyncCSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388652B2CAB6900B0257B /* AsyncCSVReader.swift */; };
+		28F79A7C2B2E46B500F72AA7 /* CSVInit in Frameworks */ = {isa = PBXBuildFile; productRef = 28F79A7B2B2E46B500F72AA7 /* CSVInit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		281C28282B2D08140018D1BA /* CSVFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFragment.swift; sourceTree = "<group>"; };
+		281C282B2B2E37B10018D1BA /* CSVInit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CSVInit; sourceTree = "<group>"; };
 		288388352B2C3D5F00B0257B /* Transit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288388382B2C3D5F00B0257B /* TransitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitApp.swift; sourceTree = "<group>"; };
 		2883883A2B2C3D5F00B0257B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		2883884F2B2C3D6000B0257B /* TransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		288388532B2C3D6000B0257B /* TransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitUITests.swift; sourceTree = "<group>"; };
 		288388552B2C3D6000B0257B /* TransitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		288388632B2C3E6400B0257B /* Agency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agency.swift; sourceTree = "<group>"; };
 		288388652B2CAB6900B0257B /* AsyncCSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCSVReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F79A7C2B2E46B500F72AA7 /* CSVInit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,7 @@
 		2883882C2B2C3D5F00B0257B = {
 			isa = PBXGroup;
 			children = (
+				281C282B2B2E37B10018D1BA /* CSVInit */,
 				288388372B2C3D5F00B0257B /* Transit */,
 				288388482B2C3D6000B0257B /* TransitTests */,
 				288388522B2C3D6000B0257B /* TransitUITests */,
@@ -96,6 +104,7 @@
 		288388372B2C3D5F00B0257B /* Transit */ = {
 			isa = PBXGroup;
 			children = (
+				288388622B2C3E5800B0257B /* GTFS */,
 				288388382B2C3D5F00B0257B /* TransitApp.swift */,
 				2883883A2B2C3D5F00B0257B /* ContentView.swift */,
 				2883883C2B2C3D6000B0257B /* Assets.xcassets */,
@@ -130,9 +139,18 @@
 			path = TransitUITests;
 			sourceTree = "<group>";
 		};
+		288388622B2C3E5800B0257B /* GTFS */ = {
+			isa = PBXGroup;
+			children = (
+				288388632B2C3E6400B0257B /* Agency.swift */,
+			);
+			path = GTFS;
+			sourceTree = "<group>";
+		};
 		288388672B2CAF5900B0257B /* CSV */ = {
 			isa = PBXGroup;
 			children = (
+				281C28282B2D08140018D1BA /* CSVFragment.swift */,
 				288388652B2CAB6900B0257B /* AsyncCSVReader.swift */,
 			);
 			path = CSV;
@@ -154,6 +172,9 @@
 			dependencies = (
 			);
 			name = Transit;
+			packageProductDependencies = (
+				28F79A7B2B2E46B500F72AA7 /* CSVInit */,
+			);
 			productName = Transit;
 			productReference = 288388352B2C3D5F00B0257B /* Transit.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 2883882C2B2C3D5F00B0257B;
+			packageReferences = (
+				28F79A7A2B2E46B500F72AA7 /* XCLocalSwiftPackageReference "CSVInit" */,
+			);
 			productRefGroup = 288388362B2C3D5F00B0257B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */,
+				288388642B2C3E6400B0257B /* Agency.swift in Sources */,
 				288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */,
+				281C28292B2D08140018D1BA /* CSVFragment.swift in Sources */,
 				288388662B2CAB6900B0257B /* AsyncCSVReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +626,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		28F79A7A2B2E46B500F72AA7 /* XCLocalSwiftPackageReference "CSVInit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CSVInit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28F79A7B2B2E46B500F72AA7 /* CSVInit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CSVInit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2883882D2B2C3D5F00B0257B /* Project object */;
 }
