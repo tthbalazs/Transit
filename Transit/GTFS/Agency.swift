@@ -2,7 +2,7 @@ import Foundation
 import CSVInit
 
 @CSVFragmentInitialized
-struct Agency: Hashable {
+struct AgencyRecord {
     let agencyId: String?
     let agencyName: String
     let agencyUrl: String

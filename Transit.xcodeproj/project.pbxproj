@@ -8,6 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		281C28292B2D08140018D1BA /* CSVFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C28282B2D08140018D1BA /* CSVFragment.swift */; };
+		2835A4762B2E49F5001CE3E0 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4752B2E49F5001CE3E0 /* Stop.swift */; };
+		2835A4782B2E4B00001CE3E0 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4772B2E4B00001CE3E0 /* Route.swift */; };
+		2835A47A2B2E4B8C001CE3E0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4792B2E4B8C001CE3E0 /* Trip.swift */; };
+		2835A47C2B2E4C99001CE3E0 /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A47B2B2E4C99001CE3E0 /* StopTime.swift */; };
+		2835A47E2B2E4D2D001CE3E0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A47D2B2E4D2D001CE3E0 /* Calendar.swift */; };
+		2835A4802B2E4D97001CE3E0 /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A47F2B2E4D97001CE3E0 /* CalendarDate.swift */; };
+		2835A4822B2E4DD0001CE3E0 /* FareAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4812B2E4DD0001CE3E0 /* FareAttribute.swift */; };
+		2835A4842B2E4E4E001CE3E0 /* FareRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4832B2E4E4E001CE3E0 /* FareRule.swift */; };
+		2835A4862B2E4E9A001CE3E0 /* Timeframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4852B2E4E9A001CE3E0 /* Timeframe.swift */; };
+		2835A4882B2E4ED5001CE3E0 /* FareMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4872B2E4ED5001CE3E0 /* FareMedia.swift */; };
+		2835A48A2B2E4F1D001CE3E0 /* FareProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4892B2E4F1D001CE3E0 /* FareProduct.swift */; };
+		2835A48C2B2E4F69001CE3E0 /* FareLegRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A48B2B2E4F69001CE3E0 /* FareLegRule.swift */; };
+		2835A48E2B2E4FC5001CE3E0 /* FareTransferRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A48D2B2E4FC5001CE3E0 /* FareTransferRule.swift */; };
+		2835A4902B2E5025001CE3E0 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A48F2B2E5025001CE3E0 /* Area.swift */; };
+		2835A4922B2E5048001CE3E0 /* StopArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4912B2E5048001CE3E0 /* StopArea.swift */; };
+		2835A4942B2E5081001CE3E0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4932B2E5081001CE3E0 /* Network.swift */; };
+		2835A4962B2E50A1001CE3E0 /* RouteNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4952B2E50A1001CE3E0 /* RouteNetwork.swift */; };
+		2835A4982B2E50C5001CE3E0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4972B2E50C5001CE3E0 /* Shape.swift */; };
+		2835A49A2B2E50FD001CE3E0 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4992B2E50FD001CE3E0 /* Frequency.swift */; };
+		2835A49C2B2E5139001CE3E0 /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A49B2B2E5139001CE3E0 /* Transfer.swift */; };
+		2835A49E2B2E5195001CE3E0 /* Pathway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A49D2B2E5195001CE3E0 /* Pathway.swift */; };
+		2835A4A02B2E51FE001CE3E0 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A49F2B2E51FE001CE3E0 /* Level.swift */; };
+		2835A4A22B2E5220001CE3E0 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A12B2E5220001CE3E0 /* Translation.swift */; };
+		2835A4A42B2E527F001CE3E0 /* FeedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A32B2E527F001CE3E0 /* FeedInfo.swift */; };
+		2835A4A62B2E52D3001CE3E0 /* Attribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A52B2E52D3001CE3E0 /* Attribution.swift */; };
 		288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388382B2C3D5F00B0257B /* TransitApp.swift */; };
 		2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2883883A2B2C3D5F00B0257B /* ContentView.swift */; };
 		2883883D2B2C3D6000B0257B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2883883C2B2C3D6000B0257B /* Assets.xcassets */; };
@@ -40,6 +65,31 @@
 /* Begin PBXFileReference section */
 		281C28282B2D08140018D1BA /* CSVFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFragment.swift; sourceTree = "<group>"; };
 		281C282B2B2E37B10018D1BA /* CSVInit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CSVInit; sourceTree = "<group>"; };
+		2835A4752B2E49F5001CE3E0 /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		2835A4772B2E4B00001CE3E0 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		2835A4792B2E4B8C001CE3E0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		2835A47B2B2E4C99001CE3E0 /* StopTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTime.swift; sourceTree = "<group>"; };
+		2835A47D2B2E4D2D001CE3E0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		2835A47F2B2E4D97001CE3E0 /* CalendarDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
+		2835A4812B2E4DD0001CE3E0 /* FareAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareAttribute.swift; sourceTree = "<group>"; };
+		2835A4832B2E4E4E001CE3E0 /* FareRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareRule.swift; sourceTree = "<group>"; };
+		2835A4852B2E4E9A001CE3E0 /* Timeframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeframe.swift; sourceTree = "<group>"; };
+		2835A4872B2E4ED5001CE3E0 /* FareMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareMedia.swift; sourceTree = "<group>"; };
+		2835A4892B2E4F1D001CE3E0 /* FareProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareProduct.swift; sourceTree = "<group>"; };
+		2835A48B2B2E4F69001CE3E0 /* FareLegRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareLegRule.swift; sourceTree = "<group>"; };
+		2835A48D2B2E4FC5001CE3E0 /* FareTransferRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareTransferRule.swift; sourceTree = "<group>"; };
+		2835A48F2B2E5025001CE3E0 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		2835A4912B2E5048001CE3E0 /* StopArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopArea.swift; sourceTree = "<group>"; };
+		2835A4932B2E5081001CE3E0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2835A4952B2E50A1001CE3E0 /* RouteNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteNetwork.swift; sourceTree = "<group>"; };
+		2835A4972B2E50C5001CE3E0 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		2835A4992B2E50FD001CE3E0 /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		2835A49B2B2E5139001CE3E0 /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		2835A49D2B2E5195001CE3E0 /* Pathway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pathway.swift; sourceTree = "<group>"; };
+		2835A49F2B2E51FE001CE3E0 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		2835A4A12B2E5220001CE3E0 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		2835A4A32B2E527F001CE3E0 /* FeedInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInfo.swift; sourceTree = "<group>"; };
+		2835A4A52B2E52D3001CE3E0 /* Attribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribution.swift; sourceTree = "<group>"; };
 		288388352B2C3D5F00B0257B /* Transit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288388382B2C3D5F00B0257B /* TransitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitApp.swift; sourceTree = "<group>"; };
 		2883883A2B2C3D5F00B0257B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +193,31 @@
 			isa = PBXGroup;
 			children = (
 				288388632B2C3E6400B0257B /* Agency.swift */,
+				2835A48F2B2E5025001CE3E0 /* Area.swift */,
+				2835A4A52B2E52D3001CE3E0 /* Attribution.swift */,
+				2835A47D2B2E4D2D001CE3E0 /* Calendar.swift */,
+				2835A47F2B2E4D97001CE3E0 /* CalendarDate.swift */,
+				2835A4812B2E4DD0001CE3E0 /* FareAttribute.swift */,
+				2835A48B2B2E4F69001CE3E0 /* FareLegRule.swift */,
+				2835A4872B2E4ED5001CE3E0 /* FareMedia.swift */,
+				2835A4892B2E4F1D001CE3E0 /* FareProduct.swift */,
+				2835A4832B2E4E4E001CE3E0 /* FareRule.swift */,
+				2835A48D2B2E4FC5001CE3E0 /* FareTransferRule.swift */,
+				2835A4A32B2E527F001CE3E0 /* FeedInfo.swift */,
+				2835A4992B2E50FD001CE3E0 /* Frequency.swift */,
+				2835A49F2B2E51FE001CE3E0 /* Level.swift */,
+				2835A4932B2E5081001CE3E0 /* Network.swift */,
+				2835A49D2B2E5195001CE3E0 /* Pathway.swift */,
+				2835A4772B2E4B00001CE3E0 /* Route.swift */,
+				2835A4952B2E50A1001CE3E0 /* RouteNetwork.swift */,
+				2835A4972B2E50C5001CE3E0 /* Shape.swift */,
+				2835A4752B2E49F5001CE3E0 /* Stop.swift */,
+				2835A4912B2E5048001CE3E0 /* StopArea.swift */,
+				2835A47B2B2E4C99001CE3E0 /* StopTime.swift */,
+				2835A4852B2E4E9A001CE3E0 /* Timeframe.swift */,
+				2835A49B2B2E5139001CE3E0 /* Transfer.swift */,
+				2835A4A12B2E5220001CE3E0 /* Translation.swift */,
+				2835A4792B2E4B8C001CE3E0 /* Trip.swift */,
 			);
 			path = GTFS;
 			sourceTree = "<group>";
@@ -292,11 +367,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2835A4902B2E5025001CE3E0 /* Area.swift in Sources */,
 				2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */,
 				288388642B2C3E6400B0257B /* Agency.swift in Sources */,
+				2835A4A02B2E51FE001CE3E0 /* Level.swift in Sources */,
 				288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */,
+				2835A4982B2E50C5001CE3E0 /* Shape.swift in Sources */,
 				281C28292B2D08140018D1BA /* CSVFragment.swift in Sources */,
+				2835A49C2B2E5139001CE3E0 /* Transfer.swift in Sources */,
+				2835A4942B2E5081001CE3E0 /* Network.swift in Sources */,
+				2835A48E2B2E4FC5001CE3E0 /* FareTransferRule.swift in Sources */,
+				2835A48C2B2E4F69001CE3E0 /* FareLegRule.swift in Sources */,
+				2835A47A2B2E4B8C001CE3E0 /* Trip.swift in Sources */,
 				288388662B2CAB6900B0257B /* AsyncCSVReader.swift in Sources */,
+				2835A4862B2E4E9A001CE3E0 /* Timeframe.swift in Sources */,
+				2835A4A22B2E5220001CE3E0 /* Translation.swift in Sources */,
+				2835A4A62B2E52D3001CE3E0 /* Attribution.swift in Sources */,
+				2835A4802B2E4D97001CE3E0 /* CalendarDate.swift in Sources */,
+				2835A47C2B2E4C99001CE3E0 /* StopTime.swift in Sources */,
+				2835A4842B2E4E4E001CE3E0 /* FareRule.swift in Sources */,
+				2835A49E2B2E5195001CE3E0 /* Pathway.swift in Sources */,
+				2835A4822B2E4DD0001CE3E0 /* FareAttribute.swift in Sources */,
+				2835A4A42B2E527F001CE3E0 /* FeedInfo.swift in Sources */,
+				2835A48A2B2E4F1D001CE3E0 /* FareProduct.swift in Sources */,
+				2835A4782B2E4B00001CE3E0 /* Route.swift in Sources */,
+				2835A4922B2E5048001CE3E0 /* StopArea.swift in Sources */,
+				2835A4762B2E49F5001CE3E0 /* Stop.swift in Sources */,
+				2835A49A2B2E50FD001CE3E0 /* Frequency.swift in Sources */,
+				2835A47E2B2E4D2D001CE3E0 /* Calendar.swift in Sources */,
+				2835A4962B2E50A1001CE3E0 /* RouteNetwork.swift in Sources */,
+				2835A4882B2E4ED5001CE3E0 /* FareMedia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
