@@ -15,7 +15,8 @@ final class DatasetDownloader: NSObject, FileManagerDelegate {
 
     func downloadDataset(from source: DatasetSource) async throws -> DatasetArchive {
         let request = URLRequest(url: source.url)
-        let (tempFile, response) = try await URLSession(configuration: .default).download(for: request)
+        let (tempFile, response) = try await URLSession(configuration: .default)
+            .download(for: request)
         let fileName = response.suggestedFilename ?? "UnknownDataset.zip"
 
         guard let archiveUrl = fileManager
@@ -36,7 +37,7 @@ final class DatasetDownloader: NSObject, FileManagerDelegate {
         )
         return dataset
     }
-
+    
     // MARK: - FileManagerDelegate methods
 
     func fileManager(
