@@ -4,7 +4,16 @@ import SwiftUI
 struct TransitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DatasetSourceView(
+                viewModel: DatasetSourceViewModel(
+                    sources: [
+                        DatasetSource(
+                            name: "ZTM",
+                            url: URL(string: "https://www.ztm.poznan.pl/pl/dla-deweloperow/getGTFSFile")!
+                        )
+                    ]
+                )
+            )
         }
     }
 }

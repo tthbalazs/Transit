@@ -36,6 +36,7 @@
 		2835A4A82B2EF0A6001CE3E0 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A72B2EF0A6001CE3E0 /* Dataset.swift */; };
 		2835A4AA2B2F6064001CE3E0 /* DatasetSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A92B2F6064001CE3E0 /* DatasetSourceView.swift */; };
 		2835A4AC2B2F60BD001CE3E0 /* DatasetDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4AB2B2F60BD001CE3E0 /* DatasetDownloader.swift */; };
+		2835A4AF2B2F8804001CE3E0 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 2835A4AE2B2F8804001CE3E0 /* ZIPFoundation */; };
 		288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388382B2C3D5F00B0257B /* TransitApp.swift */; };
 		2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2883883A2B2C3D5F00B0257B /* ContentView.swift */; };
 		2883883D2B2C3D6000B0257B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2883883C2B2C3D6000B0257B /* Assets.xcassets */; };
@@ -116,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F79A7C2B2E46B500F72AA7 /* CSVInit in Frameworks */,
+				2835A4AF2B2F8804001CE3E0 /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +260,7 @@
 			name = Transit;
 			packageProductDependencies = (
 				28F79A7B2B2E46B500F72AA7 /* CSVInit */,
+				2835A4AE2B2F8804001CE3E0 /* ZIPFoundation */,
 			);
 			productName = Transit;
 			productReference = 288388352B2C3D5F00B0257B /* Transit.app */;
@@ -333,6 +336,7 @@
 			mainGroup = 2883882C2B2C3D5F00B0257B;
 			packageReferences = (
 				28F79A7A2B2E46B500F72AA7 /* XCLocalSwiftPackageReference "CSVInit" */,
+				2835A4AD2B2F8804001CE3E0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 			);
 			productRefGroup = 288388362B2C3D5F00B0257B /* Products */;
 			projectDirPath = "";
@@ -746,7 +750,23 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		2835A4AD2B2F8804001CE3E0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		2835A4AE2B2F8804001CE3E0 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2835A4AD2B2F8804001CE3E0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
 		28F79A7B2B2E46B500F72AA7 /* CSVInit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CSVInit;

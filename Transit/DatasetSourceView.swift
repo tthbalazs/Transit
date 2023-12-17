@@ -1,8 +1,9 @@
 import SwiftUI
+import ZIPFoundation
 
 @Observable final class DatasetSourceViewModel {
     var sources: [DatasetSource]
-    var archives: [DatasetArchive] = []
+    var archives: [UUID: [DatasetArchive]] = [:]
 
     init(
         sources: [DatasetSource],
@@ -14,8 +15,19 @@ import SwiftUI
 
     func download(source: DatasetSource) async {
         do {
+            let fileManager = FileManager.default
             let datasetArchive = try await datasetDownloader.downloadDataset(from: source)
-            archives.append(datasetArchive)
+            if let previousArchives = archives[source.id] {
+                archives[source.id] = previousArchives + [datasetArchive]
+            } else {
+                archives[source.id] = [datasetArchive]
+            }
+
+            let archiveUrl = datasetArchive.archiveUrl
+            let unzipLocation = archiveUrl
+                .deletingLastPathComponent()
+                .appending(path: source.id.uuidString)
+            try fileManager.unzipItem(at: archiveUrl, to: unzipLocation)
         } catch {
             // TODO: Display errors or otherwise handle them
             print(error.localizedDescription)
@@ -31,12 +43,31 @@ struct DatasetSourceView: View {
     var body: some View {
         NavigationView {
             List(viewModel.sources, id: \.self) { source in
-                VStack(alignment: .leading) {
-                    Text(source.name)
-                        .font(.title2)
-                    Text(source.url.absoluteString)
-                        .foregroundStyle(.secondary)
-                        .font(.caption)
+                Section(source.name) {
+                    VStack {
+                        HStack {
+                            Text("Source")
+                            Spacer()
+                            Text(source.url.absoluteString)
+                                .foregroundStyle(.blue)
+                                .font(.caption)
+                        }
+                        Button(action: {
+                            Task {
+                                await viewModel.download(source: source)
+                            }
+                        }, label: {
+                            Text("Download latest dataset")
+                        })
+                    }
+                    if let archives = viewModel.archives[source.id] {
+                        List(archives) { archive in
+                            VStack {
+                                Text(archive.name)
+                                Text(archive.archiveUrl.absoluteString)
+                            }
+                        }
+                    }
                 }
             }
             .navigationTitle("Data sources")
@@ -50,7 +81,7 @@ struct DatasetSourceView: View {
             sources: [
                 DatasetSource(
                     name: "ZTM",
-                    url: URL(string: "https://www.ztm.poznan.pl/pl/dla-deweloperow/getGTFSFile/?file=20231216_20231222.zip")!
+                    url: URL(string: "https://www.ztm.poznan.pl/pl/dla-deweloperow/getGTFSFile")!
                 )
             ]
         )

@@ -21,7 +21,8 @@ final class DatasetDownloader: NSObject, FileManagerDelegate {
         guard let archiveUrl = fileManager
             .urls(for: .documentDirectory, in: .userDomainMask)
             .first?
-            .appending(path: fileName) else {
+            .appending(path: fileName)
+        else {
             throw DatasetDownloaderError.missingArchiveUrl
         }
 
@@ -30,7 +31,8 @@ final class DatasetDownloader: NSObject, FileManagerDelegate {
         let dataset = DatasetArchive(
             sourceId: source.id,
             name: fileName,
-            archiveUrl: archiveUrl
+            archiveUrl: archiveUrl,
+            downloadedAt: .now
         )
         return dataset
     }

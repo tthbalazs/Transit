@@ -10,9 +10,8 @@ struct DatasetArchive: Identifiable {
     let id: UUID = UUID()
     let sourceId: UUID
     let name: String
-
-    var archiveUrl: URL?
-    var dataset: Dataset?
+    let archiveUrl: URL
+    let downloadedAt: Date
 }
 
 struct Dataset {
