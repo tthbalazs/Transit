@@ -33,6 +33,9 @@
 		2835A4A22B2E5220001CE3E0 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A12B2E5220001CE3E0 /* Translation.swift */; };
 		2835A4A42B2E527F001CE3E0 /* FeedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A32B2E527F001CE3E0 /* FeedInfo.swift */; };
 		2835A4A62B2E52D3001CE3E0 /* Attribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A52B2E52D3001CE3E0 /* Attribution.swift */; };
+		2835A4A82B2EF0A6001CE3E0 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A72B2EF0A6001CE3E0 /* Dataset.swift */; };
+		2835A4AA2B2F6064001CE3E0 /* DatasetSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4A92B2F6064001CE3E0 /* DatasetSourceView.swift */; };
+		2835A4AC2B2F60BD001CE3E0 /* DatasetDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835A4AB2B2F60BD001CE3E0 /* DatasetDownloader.swift */; };
 		288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288388382B2C3D5F00B0257B /* TransitApp.swift */; };
 		2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2883883A2B2C3D5F00B0257B /* ContentView.swift */; };
 		2883883D2B2C3D6000B0257B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2883883C2B2C3D6000B0257B /* Assets.xcassets */; };
@@ -90,6 +93,9 @@
 		2835A4A12B2E5220001CE3E0 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		2835A4A32B2E527F001CE3E0 /* FeedInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInfo.swift; sourceTree = "<group>"; };
 		2835A4A52B2E52D3001CE3E0 /* Attribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribution.swift; sourceTree = "<group>"; };
+		2835A4A72B2EF0A6001CE3E0 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		2835A4A92B2F6064001CE3E0 /* DatasetSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetSourceView.swift; sourceTree = "<group>"; };
+		2835A4AB2B2F60BD001CE3E0 /* DatasetDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetDownloader.swift; sourceTree = "<group>"; };
 		288388352B2C3D5F00B0257B /* Transit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288388382B2C3D5F00B0257B /* TransitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitApp.swift; sourceTree = "<group>"; };
 		2883883A2B2C3D5F00B0257B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,12 +160,13 @@
 		288388372B2C3D5F00B0257B /* Transit */ = {
 			isa = PBXGroup;
 			children = (
-				288388622B2C3E5800B0257B /* GTFS */,
-				288388382B2C3D5F00B0257B /* TransitApp.swift */,
-				2883883A2B2C3D5F00B0257B /* ContentView.swift */,
 				2883883C2B2C3D6000B0257B /* Assets.xcassets */,
-				2883883E2B2C3D6000B0257B /* Preview Content */,
+				2883883A2B2C3D5F00B0257B /* ContentView.swift */,
 				288388672B2CAF5900B0257B /* CSV */,
+				2835A4A92B2F6064001CE3E0 /* DatasetSourceView.swift */,
+				288388622B2C3E5800B0257B /* GTFS */,
+				2883883E2B2C3D6000B0257B /* Preview Content */,
+				288388382B2C3D5F00B0257B /* TransitApp.swift */,
 			);
 			path = Transit;
 			sourceTree = "<group>";
@@ -197,6 +204,8 @@
 				2835A4A52B2E52D3001CE3E0 /* Attribution.swift */,
 				2835A47D2B2E4D2D001CE3E0 /* Calendar.swift */,
 				2835A47F2B2E4D97001CE3E0 /* CalendarDate.swift */,
+				2835A4A72B2EF0A6001CE3E0 /* Dataset.swift */,
+				2835A4AB2B2F60BD001CE3E0 /* DatasetDownloader.swift */,
 				2835A4812B2E4DD0001CE3E0 /* FareAttribute.swift */,
 				2835A48B2B2E4F69001CE3E0 /* FareLegRule.swift */,
 				2835A4872B2E4ED5001CE3E0 /* FareMedia.swift */,
@@ -371,8 +380,10 @@
 				2883883B2B2C3D5F00B0257B /* ContentView.swift in Sources */,
 				288388642B2C3E6400B0257B /* Agency.swift in Sources */,
 				2835A4A02B2E51FE001CE3E0 /* Level.swift in Sources */,
+				2835A4AA2B2F6064001CE3E0 /* DatasetSourceView.swift in Sources */,
 				288388392B2C3D5F00B0257B /* TransitApp.swift in Sources */,
 				2835A4982B2E50C5001CE3E0 /* Shape.swift in Sources */,
+				2835A4AC2B2F60BD001CE3E0 /* DatasetDownloader.swift in Sources */,
 				281C28292B2D08140018D1BA /* CSVFragment.swift in Sources */,
 				2835A49C2B2E5139001CE3E0 /* Transfer.swift in Sources */,
 				2835A4942B2E5081001CE3E0 /* Network.swift in Sources */,
@@ -384,6 +395,7 @@
 				2835A4A22B2E5220001CE3E0 /* Translation.swift in Sources */,
 				2835A4A62B2E52D3001CE3E0 /* Attribution.swift in Sources */,
 				2835A4802B2E4D97001CE3E0 /* CalendarDate.swift in Sources */,
+				2835A4A82B2EF0A6001CE3E0 /* Dataset.swift in Sources */,
 				2835A47C2B2E4C99001CE3E0 /* StopTime.swift in Sources */,
 				2835A4842B2E4E4E001CE3E0 /* FareRule.swift in Sources */,
 				2835A49E2B2E5195001CE3E0 /* Pathway.swift in Sources */,
